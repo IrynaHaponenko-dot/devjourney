@@ -9,8 +9,8 @@
 
 Current implementation (2026-09-24): Next.js App Router, React, TypeScript,
 CSS Modules, local validated content and small interactive client components.
-See README for exact package versions and commands. GitHub and Netlify below are
-planned repository/hosting targets, not completed integrations. Portfolio v1
+See README for exact package versions and commands. GitHub now hosts the public
+baseline; Netlify remains the planned hosting target, not a completed deployment. Portfolio v1
 publishes Home, Workflow, Toolkit and Articles; Updates routes remain parked fixtures.
 
 ---

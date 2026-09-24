@@ -30,7 +30,9 @@ human review PASSED; required and browser checks PASSED.
 Portfolio v1 currently ships with one approved production article.
 **Step 25 — README + Repository Readiness:** APPROVED (2026-09-24);
 human review PASSED; checks PASSED.
-**Step 26 — Git Baseline + GitHub Handoff:** IN PROGRESS; pre-commit checks PASSED.
+**Step 26 — Git Baseline + GitHub Handoff:** COMPLETE (2026-09-24);
+pre-commit checks and baseline push verification PASSED; human review PENDING.
+Public repository: https://github.com/IrynaHaponenko-dot/devjourney.
 **Deployment:** NOT STARTED.
 
 ## Approved Portfolio v1 Scope (Step 21)
@@ -1602,7 +1604,7 @@ was found for that future authorized step; human acceptance of Step 25 is pendin
 
 ### Step 26 — Git Baseline + GitHub Handoff
 
-Status: IN PROGRESS (2026-09-24). Human review: PENDING. Deployment: NOT STARTED.
+Status: COMPLETE (2026-09-24). Human review: PENDING. Deployment: NOT STARTED.
 
 Pre-commit safety gate and verification:
 
@@ -1619,9 +1621,27 @@ Pre-commit safety gate and verification:
 - Git Credential Manager's existing authorization verified non-interactively as
   `IrynaHaponenko-dot`. GitHub CLI is absent; authenticated HTTPS/API access is
   available. GitHub API confirmed `devjourney` does not exist on that account.
-- Create one truthful `Initial Portfolio v1 baseline` commit; do not reconstruct
-  artificial earlier history. Actual hash and remote result will be recorded in
-  one authorized follow-up documentation commit after verification.
+- Complete staged list inspected before commit: exactly 80 intended files; no
+  ignored/generated or sensitive files. Production assets present.
+
+Baseline and GitHub result:
+
+- Initial commit: `3ffb3f52f9e58b8d58c6bc45a85e3e889d7b0872`
+  — `Initial Portfolio v1 baseline`, on `main`. No fabricated historical commits.
+- Created a new empty PUBLIC repository (without separate README/license history):
+  https://github.com/IrynaHaponenko-dot/devjourney.
+- Origin: `https://github.com/IrynaHaponenko-dot/devjourney.git`.
+- Push succeeded; `main` tracks `origin/main`. GitHub API confirmed remote main
+  contains the exact baseline hash and repository visibility is public.
+- Remote tree verified: all 80 intended files, README, source directories and
+  production assets present; dependencies, generated output, local files and
+  credential artifacts absent. It matches the inspected local baseline.
+- Working tree was clean after the baseline push. One authorized follow-up
+  documentation commit records this verified result and actual repository link;
+  no application content or visual design changes.
+- README and current PROJECT/ARCHITECTURE descriptions now reflect the completed
+  GitHub handoff. No remaining handoff blocker identified; human review pending.
+- No deployment, releases, tags, Pages, Actions, Issues or Projects created.
 
 ## 08 — Content Production
 
@@ -1686,7 +1706,7 @@ Final outputs:
 
 # Current Next Step
 
-Complete Step 26 — Git Baseline + GitHub Handoff and record the verified result.
-Human review is PENDING. Deployment is NOT STARTED.
+Review Step 26 — Git Baseline + GitHub Handoff. Human review is PENDING.
+Deployment and the next implementation step are NOT STARTED.
 Preserve the approved
 Portfolio v1 scope and visual richness in all subsequent content work.

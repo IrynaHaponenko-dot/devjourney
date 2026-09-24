@@ -298,9 +298,11 @@ Portfolio case повинен показати:
 
 Production content завершено та прийнято через Step 24: Home, шість етапів Workflow,
 шість інструментів Toolkit і одна стаття. Локальні engineering checks проходять.
-Step 25 готує README та репозиторій; human review pending.
+Step 25 APPROVED; Step 26 створив і опублікував початковий Git baseline;
+human review Step 26 pending.
 
-Git ініціалізовано, але комітів і remote ще немає. GitHub/commit та deployment
-не розпочаті; hosted verification і зовнішнє developer review не виконані.
+Публічний репозиторій: https://github.com/IrynaHaponenko-dot/devjourney.
+`main` відстежує `origin/main`. Deployment не розпочато; hosted verification
+і зовнішнє developer review не виконані.
 Візуали ChatGPT/Codex залишаються нейтральними; official asset polish — PARKING,
 не блокер Portfolio v1. Історія й наступний дозволений крок: `PROGRESS.md`.

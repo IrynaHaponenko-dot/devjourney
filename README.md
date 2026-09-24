@@ -53,7 +53,7 @@ Versions below match `package.json`:
 - Node.js **24.x**, pnpm **12.4.1**; ESLint **9.39.5**.
 - Node's built-in test runner, TypeScript transpilation in test helpers, and Next's
   installed image tooling for cover validation; no separate test framework.
-- Existing Netlify build configuration; deployment and GitHub connection are pending.
+- GitHub repository published; existing Netlify build configuration, deployment pending.
 
 ## Project structure
 
@@ -149,10 +149,11 @@ not production news. The parked routes have not been disabled in this scope.
 
 As of **2026-09-24**, Portfolio v1 production content is accepted and local
 engineering checks pass. Repository/release preparation is in progress.
-Git is initialized on `main`, with no commits or remote configured yet. The future
-first commit should truthfully capture the existing Portfolio v1 baseline, not
-reconstruct an artificial step-by-step history.
+The initial Portfolio v1 baseline is published on GitHub. Its first commit captures
+the existing project truthfully; earlier development history was not reconstructed.
+`main` tracks `origin/main`. Step 26 human review is pending.
 
-GitHub repository: **pending**. Live site: **pending; deployment not yet verified**.
+GitHub repository: [IrynaHaponenko-dot/devjourney](https://github.com/IrynaHaponenko-dot/devjourney).
+Live site: **pending; deployment not started**.
 The existing `netlify.toml` specifies `pnpm build` and `.next`; configuration alone
 does not establish a working deployment.
