@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#faf8f4"/>
+  <g font-family="system-ui, sans-serif" fill="#17191d" text-anchor="middle">
+    <text x="600" y="135" font-size="48" font-weight="700">DEMO — Workflow</text>
+    <text x="600" y="285" font-size="38">Idea → Discovery → Design</text>
+    <text x="600" y="405" font-size="38">Code → Test → Deploy</text>
+    <text x="600" y="555" font-size="28">AI helps. Developer decides.</text>
+  </g>
+</svg>

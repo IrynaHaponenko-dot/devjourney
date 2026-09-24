@@ -1,0 +1,10 @@
+.logo {
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* The supplied full-color Figma asset requires a white or black background.
+   Preserve its built-in clear space and the complete, unmodified SVG canvas. */
+.logo[data-tool="figma"] {
+  background: #fff;
+}

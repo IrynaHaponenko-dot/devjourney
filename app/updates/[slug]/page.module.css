@@ -1,0 +1,34 @@
+.page { overflow-wrap: anywhere; }
+.page a { text-underline-offset: var(--space-1); }
+.page a:hover { text-decoration-thickness: 2px; }
+.back { display: inline-flex; align-items: center; min-height: 44px; margin-block-end: var(--space-5); }
+.intro { max-width: var(--content-max); margin-block-end: var(--space-7); }
+.intro p, .intro h1 { margin: 0; }
+.intro h1 { margin-block: var(--space-5); letter-spacing: -0.035em; }
+.description { font-size: var(--font-size-body-lg); color: var(--color-text-muted); }
+.meta, .metadata, .cover figcaption { font-size: var(--font-size-small); color: var(--color-text-muted); }
+.intro .metadata { margin-block: var(--space-5); }
+.source { margin-block-start: var(--space-5); }
+.notice { padding: var(--space-4) var(--space-5); background: var(--color-accent-soft); border-radius: var(--radius-md); font-size: var(--font-size-small); }
+.layout { display: grid; gap: var(--space-6); align-items: start; }
+.reading, .toc { min-width: 0; }
+.reading { max-width: var(--content-max); width: 100%; }
+.reading h2[id], .reading h3[id] { scroll-margin-block-start: var(--space-5); }
+.cover { margin: 0 0 var(--space-6); }
+.cover img { width: 100%; height: auto; border-radius: var(--radius-lg); }
+.cover figcaption { margin-block-start: var(--space-2); }
+.toc summary { cursor: pointer; font-weight: 700; min-height: 44px; padding-block: var(--space-2); }
+.toc ul { list-style: none; padding: 0; margin: var(--space-3) 0 0; }
+.toc li + li { margin-block-start: var(--space-2); }
+.toc a { display: inline-flex; align-items: center; min-height: 44px; }
+.toc .subheading { padding-inline-start: var(--space-4); font-size: var(--font-size-small); }
+.related { margin-block-start: var(--space-7); padding-block-start: var(--space-5); border-top: 1px solid var(--color-border); }
+.related h2 { font-size: var(--font-size-h3); margin: 0; }
+.related a { display: inline-flex; align-items: center; min-height: 44px; }
+.related ul { padding-inline-start: var(--space-5); }
+.related li + li { margin-block-start: var(--space-3); }
+@media (min-width: 1024px) {
+  .layout { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); }
+  .reading { grid-column: 1; grid-row: 1; }
+  .toc { grid-column: 2; grid-row: 1; }
+}

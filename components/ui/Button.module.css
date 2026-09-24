@@ -1,0 +1,43 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  max-width: 100%;
+  padding-inline: var(--space-5);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font: inherit;
+  text-align: center;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.primary:not(:disabled):hover,
+.primary:not(:disabled):active {
+  background-color: var(--color-accent-hover);
+}
+
+.secondary {
+  background-color: transparent;
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.secondary:not(:disabled):hover,
+.secondary:not(:disabled):active {
+  text-decoration: underline;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Focus-visible and reduced-motion behavior are inherited from globals.css. */

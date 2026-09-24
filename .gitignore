@@ -1,0 +1,21 @@
+# Dependencies and package-manager caches
+node_modules/
+.pnpm-store/
+
+# Generated output
+.next/
+out/
+coverage/
+.netlify/
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment files and private keys
+.env*
+*.pem
+*.key
+
+# Local logs and OS files
+*.log
+.DS_Store
+Thumbs.db

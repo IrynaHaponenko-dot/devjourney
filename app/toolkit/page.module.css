@@ -1,0 +1,123 @@
+.page {
+  overflow-wrap: anywhere;
+}
+
+.page h1,
+.page h2,
+.page h3,
+.page p {
+  margin: 0;
+}
+
+.intro {
+  max-width: var(--content-max);
+  margin-block-end: var(--space-7);
+}
+
+.eyebrow {
+  font-size: var(--font-size-small);
+  font-weight: 600;
+}
+
+.intro h1 {
+  margin-block: var(--space-5);
+  letter-spacing: -0.035em;
+}
+
+.lead {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-body-lg);
+}
+
+.intro .notice {
+  margin-block-start: var(--space-5);
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  background: var(--color-accent-soft);
+  font-size: var(--font-size-small);
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-5);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.grid > li {
+  min-width: 0;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.heading {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.heading h2 {
+  font-size: var(--font-size-h3);
+}
+
+.heading a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-underline-offset: var(--space-1);
+}
+
+.heading a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.category,
+.description {
+  color: var(--color-text-muted);
+}
+
+.category,
+.card h3 {
+  font-size: var(--font-size-small);
+}
+
+.useCases {
+  padding-inline-start: var(--space-5);
+  margin: var(--space-3) 0 0;
+}
+
+.stages {
+  margin-block-start: auto;
+  border-top: 1px solid var(--color-border);
+  padding-block-start: var(--space-4);
+}
+
+.stages ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  list-style: none;
+  padding: 0;
+  margin: var(--space-3) 0 0;
+}
+
+.stages li {
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-soft);
+  font-size: var(--font-size-small);
+}
+
+@media (min-width: 640px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1024px) {
+  .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

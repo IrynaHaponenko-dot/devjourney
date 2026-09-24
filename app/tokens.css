@@ -1,0 +1,67 @@
+/* Approved values from docs/DESIGN_SYSTEM.md. */
+:root {
+  --color-bg: #faf8f4;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f4f1eb;
+  --color-text: #17191d;
+  --color-text-muted: #65676d;
+  --color-accent: #f26a3d;
+  --color-accent-hover: #dc5730;
+  --color-accent-soft: #fff0e9;
+  --color-border: #e5e1da;
+  --color-dark: #17191d;
+  --color-dark-surface: #22252a;
+  --color-dark-text: #f7f5f1;
+  --color-dark-muted: #b7b8bc;
+  --color-success: #287a55;
+  --color-warning: #a66516;
+  --color-error: #b94444;
+
+  /* Font delivery is deferred; these stacks use available local fonts only. */
+  --font-family-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-family-mono: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-size-hero: clamp(3rem, 6vw, 4.5rem);
+  --font-size-h1: clamp(2.5rem, 5vw, 3.5rem);
+  --font-size-h2: clamp(2rem, 4vw, 2.75rem);
+  --font-size-h3: 1.5rem;
+  --font-size-body-lg: 1.125rem;
+  --font-size-body: 1rem;
+  --font-size-small: 0.875rem;
+  --line-height-heading: 1.1;
+  --line-height-body: 1.65;
+  --line-height-small: 1.5;
+
+  --container-max: 1200px;
+  --content-max: 760px;
+  --container-padding-mobile: 20px;
+  --container-padding-tablet: 24px;
+  --container-padding-desktop: 32px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 4px 16px rgba(20, 20, 20, 0.05);
+  --shadow-md: 0 12px 32px rgba(20, 20, 20, 0.08);
+
+  /* Reference values: var() cannot be used in media-query conditions.
+     Future component styles should use mobile defaults and literal min-width
+     queries at these approved values when the content requires adaptation. */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+}

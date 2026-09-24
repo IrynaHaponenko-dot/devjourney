@@ -1,0 +1,27 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+}
+
+.skipLink {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  z-index: 1;
+  transform: translateY(calc(-100% - var(--space-5)));
+  background: var(--color-surface);
+  color: var(--color-text);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+}
+
+.skipLink:focus {
+  transform: translateY(0);
+}
