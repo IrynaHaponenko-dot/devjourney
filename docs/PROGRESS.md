@@ -30,10 +30,12 @@ human review PASSED; required and browser checks PASSED.
 Portfolio v1 currently ships with one approved production article.
 **Step 25 — README + Repository Readiness:** APPROVED (2026-09-24);
 human review PASSED; checks PASSED.
-**Step 26 — Git Baseline + GitHub Handoff:** COMPLETE (2026-09-24);
-pre-commit checks and baseline push verification PASSED; human review PENDING.
+**Step 26 — Git Baseline + GitHub Handoff:** APPROVED (2026-09-24);
+pre-commit checks and baseline push verification PASSED; human review PASSED.
 Public repository: https://github.com/IrynaHaponenko-dot/devjourney.
-**Deployment:** NOT STARTED.
+**Step 27 — Netlify Production Deployment + Hosted Verification:** BLOCKED
+(2026-09-24); pre-deployment gate PASSED; Netlify access unavailable.
+**Deployment:** NOT STARTED. Portfolio v1 hosted human review: PENDING.
 
 ## Approved Portfolio v1 Scope (Step 21)
 
@@ -1604,7 +1606,7 @@ was found for that future authorized step; human acceptance of Step 25 is pendin
 
 ### Step 26 — Git Baseline + GitHub Handoff
 
-Status: COMPLETE (2026-09-24). Human review: PENDING. Deployment: NOT STARTED.
+Status: APPROVED (2026-09-24). Human review: PASSED. Deployment: NOT STARTED.
 
 Pre-commit safety gate and verification:
 
@@ -1642,6 +1644,38 @@ Baseline and GitHub result:
 - README and current PROJECT/ARCHITECTURE descriptions now reflect the completed
   GitHub handoff. No remaining handoff blocker identified; human review pending.
 - No deployment, releases, tags, Pages, Actions, Issues or Projects created.
+
+### Step 27 — Netlify Production Deployment + Hosted Verification
+
+Status: BLOCKED (2026-09-24). Production deployment: NOT STARTED.
+Portfolio v1 is not yet deployed; hosted human review: PENDING.
+
+- Pre-deployment gate PASSED: clean working tree; local `main`, `origin/main`
+  and actual GitHub `refs/heads/main` matched
+  `13a044fe9ce403aa65c8f392a9c44ce10a4fa196` before this documentation update.
+- `pnpm test` (15/15), `pnpm typecheck`, `pnpm lint`, `pnpm build`: PASSED.
+  Current Portfolio v1 requires no runtime environment credentials.
+- Existing configuration inspected and preserved: Node 24, pnpm 12.4.1,
+  existing lockfile; Netlify build `pnpm build`, publish `.next`,
+  `PNPM_FLAGS = "--shamefully-hoist"`. No manual adapter or environment variables
+  added. Hosted compatibility remains unverified until an actual Netlify build.
+- No Netlify connector, installed CLI, configured CLI session or Netlify token
+  was available. Browser control returned no browsers / "No browser is available".
+  The native computer-use fallback failed to initialize with
+  "failed to write kernel assets: The system cannot find the path specified.
+  (os error 3)". No Netlify account, team or authorization screen could be inspected.
+- Human handoff: open Netlify, sign in, select the intended account/team and
+  authorize access to `IrynaHaponenko-dot/devjourney` if requested. Browser access
+  must be restored to continue the connection and inspect actual deployment logs.
+  No credentials should be provided in chat.
+- Production URL: not available. Netlify build result: not run. Hosted route,
+  responsive (320/390/768/1024/1440), asset/navigation/runtime and public-output
+  sanity verification: NOT RUN; local checks are not substitutes for hosted QA.
+- No deployment fix, application/content/design change or deployment performed.
+  README live-link update deferred until a real production URL is verified.
+  This documentation-only update records Step 26 acceptance and the access blocker.
+- Resume Step 27 after Netlify access is available; preserve the approved scope.
+  Do not mark Portfolio v1 DEPLOYED or accepted without the required verification.
 
 ## 08 — Content Production
 
@@ -1706,7 +1740,6 @@ Final outputs:
 
 # Current Next Step
 
-Review Step 26 — Git Baseline + GitHub Handoff. Human review is PENDING.
-Deployment and the next implementation step are NOT STARTED.
-Preserve the approved
-Portfolio v1 scope and visual richness in all subsequent content work.
+Resume Step 27 after browser/Netlify access is available. Step 26 is APPROVED.
+Production deployment and hosted QA are NOT STARTED; hosted human review is PENDING.
+Preserve the approved Portfolio v1 scope and visual richness.
